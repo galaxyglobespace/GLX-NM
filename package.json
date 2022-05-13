@@ -25,7 +25,8 @@
     "sass": "^1.45.1",
     "save-dev": "^0.0.1-security",
     "swiper": "^7.4.1",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "web3": "^1.7.3"
   },
   "scripts": {
     "predeploy": "npm run build",
