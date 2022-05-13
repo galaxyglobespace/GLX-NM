@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
@@ -7,8 +7,12 @@ import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import img1 from '../assets/images/box-item/image-box-6.jpg'
 import avt from '../assets/images/avatar/avt-9.jpg'
+import Moralis from 'moralis';
 
 const CreateItem = () => {
+    const[name,setName] = useState("");
+    const[description,setDescription] = useState("");
+    const[file,setFile] = useState(null);
     return (
         <div className='create-item'>
             <Header />
@@ -91,9 +95,9 @@ const CreateItem = () => {
                                         </TabList>
 
                                         <TabPanel>
-                                            <form action="#">
-                                                <h4 className="title-create-item">Price</h4>
-                                                <input type="text" placeholder="Enter price for one item (ETH)" />
+                                            <form>
+                                                {/* <h4 className="title-create-item">Price</h4>
+                                                <input type="text" placeholder="Enter price for one item (ETH)" /> */}
 
                                                 <h4 className="title-create-item">Title</h4>
                                                 <input type="text" placeholder="Item Name" />
@@ -101,7 +105,7 @@ const CreateItem = () => {
                                                 <h4 className="title-create-item">Description</h4>
                                                 <textarea placeholder="e.g. “This is very limited item”"></textarea>
 
-                                                <div className="row-form style-3">
+                                                {/* <div className="row-form style-3">
                                                     <div className="inner-row-form">
                                                         <h4 className="title-create-item">Royalties</h4>
                                                         <input type="text" placeholder="5%" />
@@ -126,7 +130,7 @@ const CreateItem = () => {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </form>
                                         </TabPanel>
                                         <TabPanel>
