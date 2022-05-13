@@ -17,44 +17,40 @@ const WalletConnect = () => {
         [
             {
                 img: img1,
-                title: 'Meta Mask',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+                title: 'Meta Mask'
             },
-            {
-                img: img2,
-                title: 'Bitski',
-                description: ' Dolor lacinia? Donec nulla, deleniti, dis arcu pharetra maecenas dapibus ante nemo! Wisi?'
-            },
-            {
-                img: img3,
-                title: 'Fortmatic',
-                description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
-            },
+            // {
+            //     img: img2,
+            //     title: 'Bitski',
+            //     description: ' Dolor lacinia? Donec nulla, deleniti, dis arcu pharetra maecenas dapibus ante nemo! Wisi?'
+            // },
+            // {
+            //     img: img3,
+            //     title: 'Fortmatic',
+            //     description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
+            // },
             {
                 img: img4,
-                title: 'Wallet Connect',
-                description: 'Metus corrupti itaque reiciendis, provident condimentum, reprehenderit numquam, mi'
-            },
+                title: 'Wallet Connect'            },
             {
                 img: img5,
-                title: 'Coinbase Wallet',
-                description: 'Sollicitudin iure conubia vivamus habitasse aptent, eligendi deserunt excepteur tellus non'
+                title: 'Coinbase Wallet'
             },
-            {
-                img: img6,
-                title: 'Authereum',
-                description: 'Purus irure lacinia eiusmod inventore bibendum habitant potenti non sint rem! Felis, asper'
-            },
-            {
-                img: img7,
-                title: 'Kaikas',
-                description: 'Varius culpa, aspernatur accusantium? Corporis rhoncus, voluptatibus incididunt, velit '
-            },
-            {
-                img: img8,
-                title: 'Torus',
-                description: ' Soluta fuga nihil, mollitia, ad reprehenderit qui viverra culpa posuere labore inventore'
-            },
+            // {
+            //     img: img6,
+            //     title: 'Authereum',
+            //     description: 'Purus irure lacinia eiusmod inventore bibendum habitant potenti non sint rem! Felis, asper'
+            // },
+            // {
+            //     img: img7,
+            //     title: 'Kaikas',
+            //     description: 'Varius culpa, aspernatur accusantium? Corporis rhoncus, voluptatibus incididunt, velit '
+            // },
+            // {
+            //     img: img8,
+            //     title: 'Torus',
+            //     description: ' Soluta fuga nihil, mollitia, ad reprehenderit qui viverra culpa posuere labore inventore'
+            // },
             
         ]
     )
@@ -67,13 +63,13 @@ const WalletConnect = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="page-title-heading mg-bt-12">
-                                <h1 className="heading text-center">Connect Wallet</h1>
+                                <h1 className="heading text-center">Connect</h1>
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="#">Pages</Link></li>
-                                    <li>Connect Wallet</li>
+                                    <li>Connect</li>
                                 </ul>
                             </div>
                         </div>
@@ -88,7 +84,7 @@ const WalletConnect = () => {
                                 Connect Your Wallet
                             </h2>
                             <h5 className="sub-title ct style-1 pad-400">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                 
                             </h5>
                         </div>
                         <div className="col-md-12">

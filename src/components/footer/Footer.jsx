@@ -17,7 +17,7 @@ const Footer = () => {
             link: "/edit-profile"
         },
         {
-            title: "Create Item",
+            title: "Create NFT",
             link: "/create-item"
         },
     ]
