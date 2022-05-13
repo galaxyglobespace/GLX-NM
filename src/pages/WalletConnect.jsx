@@ -10,8 +10,14 @@ import img5 from '../assets/images/icon/connect-5.png'
 // import img6 from '../assets/images/icon/connect-6.png'
 // import img7 from '../assets/images/icon/connect-7.png'
 // import img8 from '../assets/images/icon/connect-8.png'
+import { useMoralis } from "react-moralis";
+
 
 const WalletConnect = () => {
+
+    const { authenticate, isAuthenticated, user } = useMoralis();
+
+
     const [data] = useState(
         [
             {
@@ -87,6 +93,11 @@ const WalletConnect = () => {
                             <h5 className="sub-title ct style-1 pad-400">
                             </h5>
                         </div>
+                        {!isAuthenticated?(
+                            <button onClick={authenticate}>Login</button>
+                        ):(
+                            <p>You are Connected</p>
+                        )}
                         <div className="col-md-12">
                             <div className="sc-box-icon-inner style-2 fl-button pri-1">
                                 {
