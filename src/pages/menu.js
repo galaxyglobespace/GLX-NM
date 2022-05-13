@@ -159,12 +159,12 @@ const menus = [
                 sub: 'Authors',
                 links: '/authors-02'
             },
-            {
-                id: 3,
-                sub: 'Wallet Connect',
-                links: '/wallet-connect'
-            },
-            // {
+//             {
+//                 id: 3,
+//                 sub: 'Wallet Connect',
+//                 links: '/wallet-connect'
+//             },
+//             // {
             //     id: 4,
             //     sub: 'Create Item',
             //     links: '/create-item'
