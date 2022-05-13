@@ -17,7 +17,15 @@ const WalletConnect = () => {
         [
             {
                 img: img1,
-               title: 'Meta Mask'
+                title: 'Meta Mask',
+            },
+            {
+                img: img4,
+                title: 'Wallet Connect',
+            },
+            {
+                img: img5,
+                title: 'Coinbase Wallet',
             },
             // {
             //     img: img2,
@@ -29,13 +37,7 @@ const WalletConnect = () => {
             //     title: 'Fortmatic',
             //     description: 'Potenti eleifend faucibus quo vero nibh netus suspendisse unde? Consectetuer aspernatur'
             // },
-            {
-                img: img4,
-                title: 'Wallet Connect'            },
-            {
-                img: img5,
-                title: 'Coinbase Wallet'
-            },
+
             // {
             //     img: img6,
             //     title: 'Authereum',
@@ -84,7 +86,6 @@ const WalletConnect = () => {
                                 Connect Your Wallet
                             </h2>
                             <h5 className="sub-title ct style-1 pad-400">
-                 
                             </h5>
                         </div>
                         <div className="col-md-12">
