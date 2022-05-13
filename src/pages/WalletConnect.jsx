@@ -17,7 +17,12 @@ const WalletConnect = () => {
         [
             {
                 img: img1,
+<<<<<<< HEAD
                 title: 'Meta Mask'
+=======
+                title: 'Meta Mask',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+>>>>>>> bf7274ed69d4a8182202e09a709591eb4473ca9b
             },
             // {
             //     img: img2,
@@ -34,7 +39,12 @@ const WalletConnect = () => {
                 title: 'Wallet Connect'            },
             {
                 img: img5,
+<<<<<<< HEAD
                 title: 'Coinbase Wallet'
+=======
+                title: 'Coinbase Wallet',
+                description: 'Sollicitudin iure conubia vivamus habitasse aptent, eligendi deserunt excepteur tellus non'
+>>>>>>> bf7274ed69d4a8182202e09a709591eb4473ca9b
             },
             // {
             //     img: img6,
