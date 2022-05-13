@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, Routes } from 'react-router-dom';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Countdown from "react-countdown";
@@ -8,11 +8,41 @@ import 'react-tabs/style/react-tabs.css';
 import img1 from '../assets/images/box-item/image-box-6.jpg'
 import avt from '../assets/images/avatar/avt-9.jpg'
 import Moralis from 'moralis';
+import { useMoralis } from "react-moralis";
+
+
 
 const CreateItem = () => {
+    const { authenticate, isAuthenticated, user } = useMoralis();
     const[name,setName] = useState("");
     const[description,setDescription] = useState("");
     const[file,setFile] = useState(null);
+
+    const mintFunction = async(e) =>{
+        e.preventDefault();
+        try{
+            //save image
+            const file1 = new Moralis.File(file.name,file);
+            await file1.saveIPFS();
+            const file1url = file1.ipfs()
+            //save metadata
+            const metadata = {
+                name,description,image : file1url
+            }
+            const file2 = new Moralis.File(`${name}metadata.json`,{
+                base64: Buffer.from(JSON.stringify(metadata)).toString('base64')
+            });
+            await file2.saveIPFS();
+            const metadataUrl = file2.ipfs();
+            //interact with smart contract
+            
+        }catch(err){
+            console.error(err)
+        }
+        console.log("hello")
+    
+    }
+    
     return (
         <div className='create-item'>
             <Header />
@@ -95,15 +125,20 @@ const CreateItem = () => {
                                         </TabList>
 
                                         <TabPanel>
-                                            <form>
+                                            <form onSubmit={mintFunction}>
                                                 {/* <h4 className="title-create-item">Price</h4>
                                                 <input type="text" placeholder="Enter price for one item (ETH)" /> */}
 
+                                                <h4 className="title-create-item">Image</h4>
+                                                <input type="file" onChange={e=>setFile(e.target.files[0])} />
+
                                                 <h4 className="title-create-item">Title</h4>
-                                                <input type="text" placeholder="Item Name" />
+                                                <input type="text" placeholder="Item Name" value={name} onChange={e => setName(e.target.value)}/>
 
                                                 <h4 className="title-create-item">Description</h4>
-                                                <textarea placeholder="e.g. “This is very limited item”"></textarea>
+                                                <textarea placeholder="e.g. “This is very limited item”" value={description} onChange={e => setDescription(e.target.value)}></textarea>
+
+                                                <button type='submit'> Submit</button>
 
                                                 {/* <div className="row-form style-3">
                                                     <div className="inner-row-form">
