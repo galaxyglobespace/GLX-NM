@@ -10,6 +10,10 @@ import avt from '../assets/images/avatar/avt-9.jpg'
 import Moralis from 'moralis';
 import { useMoralis } from "react-moralis";
 import Web3 from 'web3';
+import ContractABI from './constant/contract';
+const web3 = new Web3(Web3.givenProvider)
+const ContractAddress = "0x6256626eb4B7609F68Fc4fAE157d6b8A71dCc327";
+
 
 
 
@@ -37,6 +41,8 @@ const CreateItem = () => {
             await file2.saveIPFS();
             const metadataUrl = file2.ipfs();
             //interact with smart contract
+            const contract = new web3.eth.Contract(ContractABI,ContractAddress)
+            const response = await contract.methods.mint(metadataUrl).send({from : user.get('ethAddress')})
             
         }catch(err){
             console.error(err)

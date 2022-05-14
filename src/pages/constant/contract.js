@@ -1,5 +1,4 @@
-export const contractAddress = "0x6256626eb4B7609F68Fc4fAE157d6b8A71dCc327";
-export const contractABI = [
+const ContractABI = [
 	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
@@ -418,3 +417,5 @@ export const contractABI = [
 		"type": "function"
 	}
 ]
+
+export default ContractABI;
