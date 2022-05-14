@@ -8,9 +8,13 @@ import logodark from '../../assets/images/logo/logo_dark.png'
 import logodark2x from '../../assets/images/logo/logo_dark@2x.png'
 import imgsun from '../../assets/images/icon/sun.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
+import { useMoralis } from "react-moralis";
+
 
 
 const Header = () => {
+    const { user } = useMoralis();
+
     const { pathname } = useLocation();
 
     const headerRef = useRef (null)
@@ -102,8 +106,18 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
+<<<<<<< HEAD
                                         <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Connect
                                         </span></Link>
+=======
+                                        <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1">
+                                            {user?(
+                                                <span>{user.get("username")}</span>
+                                            ):(
+                                                <span>Connect Wallet</span>
+                                            )}
+                                            </Link>
+>>>>>>> 1fea80e45736cd4bc2fadeb7a065b3f88f7c7021
                                     </div>
 
                                     <div className="admin_active" id="header_admin">

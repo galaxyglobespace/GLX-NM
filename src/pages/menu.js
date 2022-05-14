@@ -1,51 +1,51 @@
 const menus = [
-    {
-        id: 1,
-        name: '',
-        links: '/home-08',
-        // namesub: [
-        //     {
-        //         id: 1,
-        //         sub: 'Home 01',
-        //         links: '/'
-        //     },
-        //     {
-        //         id: 2,
-        //         sub: 'Home 02',
-        //         links: '/home-02'
-        //     },
-        //     {
-        //         id: 3,
-        //         sub: 'Home 03',
-        //         links: '/home-03'
-        //     },
-        //     {
-        //         id: 4,
-        //         sub: 'Home 04',
-        //         links: '/home-04'
-        //     },
-        //     {
-        //         id: 5,
-        //         sub: 'Home 05',
-        //         links: '/home-05'
-        //     },
-        //     {
-        //         id: 6,
-        //         sub: 'Home 06',
-        //         links: '/home-06'
-        //     },
-        //     {
-        //         id: 7,
-        //         sub: 'Home 07',
-        //         links: '/home-07'
-        //     },
-        //     {
-        //         id: 8,
-        //         sub: 'Home 08 (Special)',
-        //         links: '/home-08'
-        //     },
-        // ]
-    },
+    // {
+    //     id: 1,
+    //     name: 'Home',
+    //     links: '/home-08',
+    //     namesub: [
+    //         {
+    //             id: 1,
+    //             sub: 'Home 01',
+    //             links: '/'
+    //         },
+    //         {
+    //             id: 2,
+    //             sub: 'Home 02',
+    //             links: '/home-02'
+    //         },
+    //         {
+    //             id: 3,
+    //             sub: 'Home 03',
+    //             links: '/home-03'
+    //         },
+    //         {
+    //             id: 4,
+    //             sub: 'Home 04',
+    //             links: '/home-04'
+    //         },
+    //         {
+    //             id: 5,
+    //             sub: 'Home 05',
+    //             links: '/home-05'
+    //         },
+    //         {
+    //             id: 6,
+    //             sub: 'Home 06',
+    //             links: '/home-06'
+    //         },
+    //         {
+    //             id: 7,
+    //             sub: 'Home 07',
+    //             links: '/home-07'
+    //         },
+    //         {
+    //             id: 8,
+    //             sub: 'Home 08 (Special)',
+    //             links: '/home-08'
+    //         },
+    //     ]
+    // },
     {
         id: 2,
         name: 'Explore',
@@ -69,7 +69,7 @@ const menus = [
             // {
             //     id: 4,
             //     sub: 'Explore 04',
-            //     links: '/explore-04'
+            //     links: ''
             // },
             {
                 id: 5,
@@ -103,11 +103,13 @@ const menus = [
                 sub: 'Ranking',
                 links: '/ranking'
             },
+
             {
                 id: 2,
                 sub: 'Activity',
                 links: '/activity-02'
             }
+
         ],
     },
     {
@@ -117,6 +119,11 @@ const menus = [
         namesub: [
             {
                 id: 1,
+                sub: 'Contact',
+                links: '/contact-01'
+            },
+            {
+                id: 1,
                 sub: 'Blog',
                 links: '/blog'
             },
@@ -124,11 +131,6 @@ const menus = [
                 id: 2,
                 sub: 'Blog Details',
                 links: '/blog-details'
-            },
-            {
-                id: 1,
-                sub: 'Contact',
-                links: '/contact-01'
             },
             {
                 id: 10,
@@ -157,14 +159,14 @@ const menus = [
                 sub: 'Authors',
                 links: '/authors-02'
             },
-            // {
-            //     id: 3,
-            //     sub: 'Wallet Connect',
-            //     links: '/wallet-connect'
-            // },
-            // {
+//             {
+//                 id: 3,
+//                 sub: 'Wallet Connect',
+//                 links: '/wallet-connect'
+//             },
+//             // {
             //     id: 4,
-            //     sub: '',
+            //     sub: 'Create Item',
             //     links: '/create-item'
             // },
             {
@@ -183,11 +185,11 @@ const menus = [
             //     sub: 'Sign Up',
             //     links: '/sign-up'
             // },
-            {
-                id: 9,
-                sub: 'No Result',
-                links: '/no-result'
-            },
+            // {
+            //     id: 9,
+            //     sub: 'No Result',
+            //     links: '/no-result'
+            // },
             
         ],
     },
@@ -196,12 +198,12 @@ const menus = [
         name: 'Create',
         links: '/create-item',
         // namesub: [
-
-        //     // {
-        //     //     id: 2,
-        //     //     sub: 'Contact 2',
-        //     //     links: '/contact-02'
-        //     // }
+            
+        //     {
+        //         id: 2,
+        //         sub: 'Contact 2',
+        //         links: '/contact-02'
+        //     }
         // ],
     },
     
