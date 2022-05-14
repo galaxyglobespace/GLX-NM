@@ -9,6 +9,8 @@ import img1 from '../assets/images/box-item/image-box-6.jpg'
 import avt from '../assets/images/avatar/avt-9.jpg'
 import Moralis from 'moralis';
 import { useMoralis } from "react-moralis";
+import Web3 from 'web3';
+
 
 
 

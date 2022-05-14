@@ -4,6 +4,7 @@ import App from './App';
 import {BrowserRouter} from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
 import { MoralisProvider } from "react-moralis";
+import './polyfill'
 
 
 ReactDOM.render(
