@@ -10,7 +10,7 @@ import './polyfill'
 ReactDOM.render(
   <BrowserRouter >
     <ScrollToTop />
-    <MoralisProvider serverUrl="https://btbpgajnttxt.usemoralis.com:2053/server" appId="cg083RyJzWvVbLtyQ7WxQpfAyIICON4AN8MGSxqe">
+    <MoralisProvider serverUrl="https://xk9idsattwuf.usemoralis.com:2053/server" appId="15Iy1jKDEBdnTjYWxPCBGXP2ttRu6drjrhuKpFD7">
     <App />
     </MoralisProvider>
   </BrowserRouter>,

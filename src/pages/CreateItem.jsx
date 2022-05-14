@@ -42,8 +42,10 @@ const CreateItem = () => {
             const metadataUrl = file2.ipfs();
             //interact with smart contract
             const contract = new web3.eth.Contract(ContractABI,ContractAddress)
-            const response = await contract.methods.mint(metadataUrl).send({from : user.get('ethAddress')})
+            const response = await contract.methods.mint(metadataUrl).send({from : user.get('ethAddress')});
+            const tokenId = response.events.transfer.returnValues.tokenId;
             
+            alert("NFT MINTED SUCCESSFULLY")
         }catch(err){
             console.error(err)
         }
