@@ -106,10 +106,9 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-<<<<<<< HEAD
+
                                         <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Connect
                                         </span></Link>
-=======
                                         <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1">
                                             {user?(
                                                 <span>{user.get("username")}</span>
@@ -117,7 +116,7 @@ const Header = () => {
                                                 <span>Connect Wallet</span>
                                             )}
                                             </Link>
->>>>>>> 1fea80e45736cd4bc2fadeb7a065b3f88f7c7021
+
                                     </div>
 
                                     <div className="admin_active" id="header_admin">
