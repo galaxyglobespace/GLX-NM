@@ -121,7 +121,7 @@ const BlogDetails = () => {
                                     </div>
                                 </div>
                                 <div className="image">
-                                    <img src={imgblog1} alt="Axies" />
+                                    <img src={imgblog1} alt="Galaxy" />
                                 </div> 
                                 <div className="inner-post mg-t-40">
                                     <h3 className="heading mg-bt-16">What is the most fun thing to become a designer?</h3>    
@@ -131,8 +131,8 @@ const BlogDetails = () => {
                                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                                     </p> 
                                     <div className="image-box">
-                                        <img src={imgblogdetail1} alt="Axies" />
-                                        <img src={imgblogdetail2} alt="Axies" />
+                                        <img src={imgblogdetail1} alt="Galaxy" />
+                                        <img src={imgblogdetail2} alt="Galaxy" />
                                     </div>
                                 </div>   
                                 <div className="inner-post mg-t-22">
@@ -141,7 +141,7 @@ const BlogDetails = () => {
 
                                     </p> 
                                     <div className="image">
-                                        <img src={imgblog2} alt="Axies" />
+                                        <img src={imgblog2} alt="Galaxy" />
                                     </div>
                                 </div>       
                                 <div className="inner-post mg-t-24">
@@ -202,7 +202,7 @@ const BlogDetails = () => {
                                     {
                                         dataRecent.map((item,index) => (
                                             <li key={index} className="box-recent-post">
-                                                <div className="box-feature"><Link to="/blog-details"><img src={item.img} alt="Axies" /></Link></div>
+                                                <div className="box-feature"><Link to="/blog-details"><img src={item.img} alt="Galaxy" /></Link></div>
                                                 <div className="box-content">
                                                     <Link to="/blog-details" className="title-recent-post">{item.title}</Link>
                                                     <span><span className="sub-recent-post">{item.text}</span><Link to="/blog" className="day-recent-post">{item.time}</Link></span>

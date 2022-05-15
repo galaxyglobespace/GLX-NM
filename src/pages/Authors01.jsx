@@ -52,7 +52,7 @@ const Authors01 = () => {
                                             <div className="author">
                                                 <div className="sc-author-box style-2">
                                                     <div className="author-avatar">
-                                                        <img src={item.imgAuthor} alt="Axies" className='avatar' />
+                                                        <img src={item.imgAuthor} alt="Galaxy" className='avatar' />
                                                     <div className="badge"></div>
                                                 </div>
                                                 </div>
@@ -68,15 +68,15 @@ const Authors01 = () => {
                                         <Link to="/author-02">
                                             <div className="media-images-collection">
                                                 <div className="box-left">
-                                                    <img src={item.imgleft} alt="Axies" />
+                                                    <img src={item.imgleft} alt="Galaxy" />
                                                 </div>
                                                 <div className="box-right">
                                                     <div className="top-img">
-                                                        <img src={item.imgright1} alt="Axies" />
-                                                        <img src={item.imgright2} alt="Axies" />
+                                                        <img src={item.imgright1} alt="Galaxy" />
+                                                        <img src={item.imgright2} alt="Galaxy" />
                                                     </div>
                                                     <div className="bottom-img">
-                                                        <img src={item.imgright3} alt="Axies" />
+                                                        <img src={item.imgright3} alt="Galaxy" />
                                                     </div>
                                                 </div>
                                             </div>

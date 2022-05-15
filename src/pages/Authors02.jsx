@@ -535,7 +535,7 @@ const Authors02 = () => {
                     <div className="flat-tabs tab-authors">
                         <div className="author-profile flex">
                             <div className="feature-profile">
-                                <img src={avt} alt="Axies" className="avatar" />
+                                <img src={avt} alt="Galaxy" className="avatar" />
                             </div>
                             <div className="infor-profile">
                                 <span>Author Profile</span>
@@ -576,7 +576,7 @@ const Authors02 = () => {
                                                         <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-12">
                                                             <div className="sc-card-product explode ">
                                                                 <div className="card-media">
-                                                                    <Link to="/item-details-01"><img src={data.img} alt="Axies" /></Link>
+                                                                    <Link to="/item-details-01"><img src={data.img} alt="Galaxy" /></Link>
                                                                     <div className="button-place-bid ">
                                                                         <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                                                     </div>
@@ -588,7 +588,7 @@ const Authors02 = () => {
                                                                 <div className="meta-info">
                                                                     <div className="author">
                                                                         <div className="avatar">
-                                                                            <img src={data.imgAuthor} alt="Axies" />
+                                                                            <img src={data.imgAuthor} alt="Galaxy" />
                                                                         </div>
                                                                         <div className="info">
                                                                             <span>Creator</span>

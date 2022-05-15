@@ -35,7 +35,7 @@ const EditProfile = () => {
                          <div className="col-xl-3 col-lg-4 col-md-6 col-12">
                             <div className="sc-card-profile text-center">
                                 <div className="card-media">
-                                    <img id="profileimg" src={avt} alt="Axies" />                         
+                                    <img id="profileimg" src={avt} alt="Galaxy" />                         
                                 </div>
                             <div id="upload-profile">
                                 <Link to="#" className="btn-upload">
@@ -56,10 +56,10 @@ const EditProfile = () => {
                                         </label>
                                     </form>
                                     <div className="image">
-                                        <img src={bg1} alt="Axies" />
+                                        <img src={bg1} alt="Galaxy" />
                                     </div>
                                     <div className="image style2">
-                                        <img src={bg2} alt="Axies" />
+                                        <img src={bg2} alt="Galaxy" />
                                     </div>
                                 </div>
 
@@ -73,7 +73,7 @@ const EditProfile = () => {
                                                 </fieldset>
                                                 <fieldset>
                                                     <h4 className="title-infor-account">Custom URL</h4>
-                                                    <input type="text" placeholder="Axies.Trista Francis.com/" required />
+                                                    <input type="text" placeholder="Galaxy.Trista Francis.com/" required />
                                                 </fieldset>
                                                 <fieldset>
                                                     <h4 className="title-infor-account">Email</h4>

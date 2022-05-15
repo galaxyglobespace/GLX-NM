@@ -30,7 +30,7 @@ const TodayPicks = props => {
                                 <div key={index} className="fl-item col-xl-3 col-lg-4 col-md-6 col-sm-6">
                                     <div className={`sc-card-product explode style2 mg-bt ${item.feature ? 'comingsoon' : '' } `}>                               
                                         <div className="card-media">
-                                            <Link to="/item-details-01"><img src={item.img} alt="Axies" /></Link>
+                                            <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>
                                             <div className="button-place-bid">
                                                 <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                             </div>
@@ -43,7 +43,7 @@ const TodayPicks = props => {
                                         <div className="meta-info">
                                             <div className="author">
                                                 <div className="avatar">
-                                                    <img src={item.imgAuthor} alt="Axies" />
+                                                    <img src={item.imgAuthor} alt="Galaxy" />
                                                 </div>
                                                 <div className="info">
                                                     <span>Creator</span>

@@ -91,7 +91,7 @@ const ItemDetails01 = () => {
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={imgdetail1} alt="Axies" />
+                                    <img src={imgdetail1} alt="Galaxy" />
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ const ItemDetails01 = () => {
                                         <div className="meta-info">
                                             <div className="author">
                                                 <div className="avatar">
-                                                    <img src={img6} alt="Axies" />
+                                                    <img src={img6} alt="Galaxy" />
                                                 </div>
                                                 <div className="info">
                                                     <span>Owned By</span>
@@ -124,7 +124,7 @@ const ItemDetails01 = () => {
                                         <div className="meta-info">
                                             <div className="author">
                                                 <div className="avatar">
-                                                    <img src={img7} alt="Axies" />
+                                                    <img src={img7} alt="Galaxy" />
                                                 </div>
                                                 <div className="info">
                                                     <span>Create By</span>
@@ -173,7 +173,7 @@ const ItemDetails01 = () => {
                                                                 <div className="sc-author-box style-2">
                                                                     <div className="author-avatar">
                                                                         <Link to="#">
-                                                                            <img src={item.img} alt="Axies" className="avatar" />
+                                                                            <img src={item.img} alt="Galaxy" className="avatar" />
                                                                         </Link>
                                                                         <div className="badge"></div>
                                                                     </div>
@@ -203,7 +203,7 @@ const ItemDetails01 = () => {
                                                                 <div className="sc-author-box style-2">
                                                                     <div className="author-avatar">
                                                                         <Link to="#">
-                                                                            <img src={img1} alt="Axies" className="avatar" />
+                                                                            <img src={img1} alt="Galaxy" className="avatar" />
                                                                         </Link>
                                                                         <div className="badge"></div>
                                                                     </div>

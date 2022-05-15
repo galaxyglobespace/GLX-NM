@@ -82,7 +82,7 @@ const CreateItem = () => {
                              <h4 className="title-create-item">Preview item</h4>
                             <div className="sc-card-product">
                                 <div className="card-media">
-                                    <Link to="/item-details-01"><img src={img1} alt="Axies" /></Link>
+                                    <Link to="/item-details-01"><img src={img1} alt="Galaxy" /></Link>
                                     <Link to="/login" className="wishlist-button heart"><span className="number-like"> 100</span></Link>
                                     <div className="featured-countdown">
                                         <span className="slogan"></span>
@@ -98,7 +98,7 @@ const CreateItem = () => {
                                 <div className="meta-info">
                                     <div className="author">
                                         <div className="avatar">
-                                            <img src={avt} alt="Axies" />
+                                            <img src={avt} alt="Galaxy" />
                                         </div>
                                         <div className="info">
                                             <span>Owned By</span>

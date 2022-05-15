@@ -157,7 +157,7 @@ const TopSeller = () => {
                                                     <div className="sc-author-box style-3">
                                                         <div className="author-avatar">
                                                             <Link to="/authors-02">
-                                                                <img src={item.img} alt="Axies" className="avatar" />
+                                                                <img src={item.img} alt="Galaxy" className="avatar" />
                                                             </Link>
                                                             <div className="badge"><i className="ripple"></i></div>
                                                         </div>
@@ -199,7 +199,7 @@ const TopSeller = () => {
                                                     <div className="sc-author-box style-3">
                                                         <div className="author-avatar">
                                                             <Link to="#">
-                                                                <img src={item.img} alt="Axies" className="avatar" />
+                                                                <img src={item.img} alt="Galaxy" className="avatar" />
                                                             </Link>
                                                             <div className="badge"><i className="ripple"></i></div>
                                                         </div>

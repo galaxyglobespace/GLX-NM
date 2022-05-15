@@ -62,7 +62,7 @@ const LiveAuction = props => {
                                                                 <div className="meta-info style">
                                                                     <div className="author">
                                                                         <div className="avatar">
-                                                                            <img src={item.imgCollection} alt="Axies" />
+                                                                            <img src={item.imgCollection} alt="Galaxy" />
                                                                         </div>
                                                                         <div className="info">
                                                                             <span>Collection</span>
@@ -90,7 +90,7 @@ const LiveAuction = props => {
                                                                     </div>
                                                                 </div>
                                                                 <div className="card-media">
-                                                                    <Link to="/item-details-01"><img src={item.img} alt="Axies" /></Link>
+                                                                    <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>
                                                                     <Link to="/login" className="wishlist-button heart"><span className="number-like"> {item.wishlist}</span></Link>
                                                                     <div className="featured-countdown">
                                                                         <span className="slogan"></span>
@@ -109,7 +109,7 @@ const LiveAuction = props => {
                                                                 <div className="meta-info">
                                                                     <div className="author">
                                                                         <div className="avatar">
-                                                                            <img src={item.imgAuthor} alt="Axies" />
+                                                                            <img src={item.imgAuthor} alt="Galaxy" />
                                                                         </div>
                                                                         <div className="info">
                                                                             <span>Creator</span>

@@ -306,7 +306,7 @@ const TopSeller = () => {
                                                             <div className="author-style2 flex">
                                                                 <div className="author-avatar">
                                                                     <Link to="#">
-                                                                        <img src={item.img} alt="Axies" className="avatar" />
+                                                                        <img src={item.img} alt="Galaxy" className="avatar" />
                                                                     </Link>
                                                                     <div className="badge"><i className="ripple"></i></div>
                                                                 </div>

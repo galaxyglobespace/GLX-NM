@@ -62,11 +62,11 @@ const PopularCollectionItem = props => (
                     <div className="sc-card-collection">
                         <Link to="/authors-01">
                             <div className="media-images-box">
-                                <img src={props.item.imgtop} alt="Axies" />
+                                <img src={props.item.imgtop} alt="Galaxy" />
                                 <div className="bottom-media">
-                                    <img src={props.item.imgright1} alt="Axies" />
-                                    <img src={props.item.imgright2} alt="Axies" />
-                                    <img src={props.item.imgright3} alt="Axies" />
+                                    <img src={props.item.imgright1} alt="Galaxy" />
+                                    <img src={props.item.imgright2} alt="Galaxy" />
+                                    <img src={props.item.imgright3} alt="Galaxy" />
                                 </div>
                             </div>
                         </Link>
@@ -74,7 +74,7 @@ const PopularCollectionItem = props => (
                             <div className="author">
                                 <div className="sc-author-box style-2">
                                     <div className="author-avatar">
-                                        <img src={props.item.imgAuthor} alt="Axies" className="avatar" />
+                                        <img src={props.item.imgAuthor} alt="Galaxy" className="avatar" />
                                         <div className="badge"><i className="ripple"></i></div>
                                     </div>
                                 </div>
