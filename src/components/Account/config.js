@@ -4,6 +4,7 @@ import Coinbase from "../../assets/images/icon/connect-5.png";
 import TrustWallet from "../../assets/images/icon/TrustWallet.png";
 import Torus from "../../assets/images/icon/connect-8.png";
 
+
 export const connectors = [
   {
     title: "Metamask",
