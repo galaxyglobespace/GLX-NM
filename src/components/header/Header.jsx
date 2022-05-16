@@ -13,7 +13,7 @@ import { useMoralis } from "react-moralis";
 
 
 const Header = () => {
-    const { user } = useMoralis();
+    const { user, authenticate , logout } = useMoralis();
 
     const { pathname } = useLocation();
 
@@ -106,16 +106,18 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-
-                                        <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Connect
-                                        </span></Link>
-                                        <Link to="/wallet-connect" className="sc-button header-slider style style-1 wallet fl-button pri-1">
-                                            {user?(
-                                                <span>{user.get("username")}</span>
-                                            ):(
-                                                <span>Connect Wallet</span>
-                                            )}
-                                            </Link>
+                                        {!user?(
+                                            <span onClick={authenticate} className="sc-button header-slider style style-1 wallet fl-button pri-1">Connect</span>
+                                        ):(
+                                            <div>
+                                                <span className="sc-button header-slider style style-1 wallet fl-button pri-1">{user.get('username')}</span>
+                                                <span onClick={logout} className="sc-button header-slider style style-1 wallet fl-button pri-1">Logout</span>
+                                            </div>
+                                            
+                                        )}
+                                        
+                                        
+                                        
 
                                     </div>
 
