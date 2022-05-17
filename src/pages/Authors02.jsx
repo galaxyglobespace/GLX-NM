@@ -32,24 +32,26 @@ import img8 from '../assets/images/box-item/image-box-11.jpg'
 import imga8 from '../assets/images/avatar/avt-3.jpg'
 import imgCollection8 from '../assets/images/avatar/avt-18.jpg'
 import { useMoralis, useMoralisWeb3Api } from "react-moralis";
+import { NFTBalance, NFT} from 'web3uikit';
+
 
 
 
 
 
 const Authors02 = () => {
-    const Web3Api = useMoralisWeb3Api();
+    // const Web3Api = useMoralisWeb3Api();
     const { user} = useMoralis();
-    const userAddress = user.get('ethAddress')
+    // const userAddress = user.get('ethAddress')
 
-    const nftBalance = async()=>{
-        const options = {
-            chain: "rinkeby",
-            address: userAddress,
-          };
-          const polygonNFTs = await Web3Api.account.getNFTs(options);
-          console.log(polygonNFTs)
-    }
+    // const nftBalance = async()=>{
+    //     const options = {
+    //         chain: "rinkeby",
+    //         address: userAddress,
+    //       };
+    //       const polygonNFTs = await Web3Api.account.getNFTs(options);
+    //       console.log(polygonNFTs)
+    // }
 
     const [menuTab] = useState(
         [
@@ -556,7 +558,7 @@ const Authors02 = () => {
                             </div>
                             <div className="infor-profile">
                                 <span>Author Profile</span>
-                                <h2 className="title">Trista Francis</h2>
+                                <h2 className="title">{user.get('username')}</h2>
                                 <p className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
                                 <form>
                                     <input type="text" className="inputcopy" defaultValue={user.get('ethAddress')} readOnly />
@@ -573,7 +575,12 @@ const Authors02 = () => {
                                 <div className="btn-profile"><Link to="/login" className="sc-button style-1 follow">Follow</Link></div>
                             </div>
                         </div>
-                        <button onClick={nftBalance}>Hello</button>
+                        <NFTBalance 
+                         address={user.get('ethAddress')}
+                         chain='rinkeby'
+                         />
+                        
+
                         <Tabs>
                             <TabList>
                                 {

@@ -8,12 +8,12 @@ import logodark from '../../assets/images/logo/logo_dark.png'
 import logodark2x from '../../assets/images/logo/logo_dark@2x.png'
 import imgsun from '../../assets/images/icon/sun.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
-import { useMoralis } from "react-moralis";
+import { ConnectButton } from 'web3uikit';
+
 
 
 
 const Header = () => {
-    const { user, authenticate , logout } = useMoralis();
 
     const { pathname } = useLocation();
 
@@ -106,19 +106,8 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-                                    
-                                        {!user?(
-                                            <span onClick={authenticate} className="sc-button header-slider style style-1 wallet fl-button pri-1"></span>
-                                        ):(
-                                            <div>
-                                                <span className="sc-button header-slider style style-1 wallet fl-button pri-1">{user.get('username')}</span>
-                                                <span onClick={logout} className="sc-button header-slider style style-1 wallet fl-button pri-1">Logout</span>
-                                                
-                                            </div>
-                                            
-                                        )}
-                                        
-                                        
+                                        <ConnectButton/>
+
                                         
 
                                     </div>

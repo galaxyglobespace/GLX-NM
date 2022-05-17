@@ -26,11 +26,12 @@
     "save-dev": "^0.0.1-security",
     "swiper": "^7.4.1",
     "web-vitals": "^2.1.2",
-    "web3": "^1.7.3"
+    "web3": "^1.7.3",
+    "web3uikit": "^0.1.145"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
