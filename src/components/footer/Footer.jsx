@@ -6,7 +6,7 @@ const Footer = () => {
     const accountList = [
         {
             title: "Authors",
-            link: "/authors-01"
+            link: "/authors-02"
         },
         {
             title: "Collection",
@@ -32,17 +32,17 @@ const Footer = () => {
         },
         {
             title: "Item Details",
-            link: "/item-details-01"
+            link: "/item-details-02"
         },
         {
             title: "Activity",
-            link: "/activity-01"
+            link: "/activity-02"
         },
     ]
     const companyList = [
         {
             title: "Explore",
-            link: "/explore-01"
+            link: "/explore-04"
         },
         {
             title: "Contact Us",
@@ -60,28 +60,28 @@ const Footer = () => {
     const socialList = [
         {
             icon: "fab fa-twitter",
-            link: "#"
+            link: ""
         },
         {
             icon: "fab fa-facebook",
-            link: "#"
+            link: "https://www.facebook.com/livenftofficial"
         },
         {
             icon: "fab fa-telegram-plane",
-            link: "#"
+            link: "https://t.me/livenftofficial"
         },
-        {
-            icon: "fab fa-youtube",
-            link: "#"
-        },
-        {
-            icon: "icon-fl-tik-tok-2",
-            link: "#"
-        },
-        {
-            icon: "icon-fl-vt",
-            link: "#"
-        },
+        // {
+        //     icon: "fab fa-youtube",
+        //     link: "#"
+        // },
+        // {
+        //     icon: "icon-fl-tik-tok-2",
+        //     link: "#"
+        // },
+        // {
+        //     icon: "icon-fl-vt",
+        //     link: "#"
+        // },
         
 
     ]
