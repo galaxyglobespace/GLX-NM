@@ -1,4 +1,4 @@
-import Home01 from "./Home01";
+// import Home01 from "./Home01";
 // import Home02 from "./Home02";
 // import Home03 from "./Home03";
 // import Home04 from "./Home04";
@@ -33,15 +33,15 @@ import Contact01 from "./Contact01";
 
 
 const routes = [
-  { path: '/', component: <Home01 />},
+  { path: '/', component: <Home08 />},
   // { path: '/home-02', component: <Home02 />},
   // { path: '/home-03', component: <Home03 />},
   // { path: '/home-04', component: <Home04 />},
   // { path: '/home-05', component: <Home05 />},
   // { path: '/home-06', component: <Home06 />},
   // { path: '/home-07', component: <Home07 />},
-  { path: '/home-08', component: <Home08 />},
-  { path: '/explore-01', component: <Explore01 />},
+  // { path: '/home-08', component: <Home08 />},
+  // { path: '/explore-01', component: <Explore01 />},
   // { path: '/explore-02', component: <Explore02 />},
   // { path: '/explore-03', component: <Explore03 />},
   { path: '/explore-04', component: <Explore04 />},

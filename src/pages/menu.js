@@ -50,44 +50,44 @@ const menus = [
         id: 2,
         name: 'Explore',
         links: '/explore-04',
-        namesub: [
-            // {
-            //     id: 1,
-            //     sub: 'Explore 01',
-            //     links: '/explore-01'
-            // },
-            // {
-            //     id: 2,
-            //     sub: 'Explore 02',
-            //     links: '/explore-02'
-            // },
-            // {
-            //     id: 3,
-            //     sub: 'Explore 03',
-            //     links: '/explore-03'
-            // },
-            // {
-            //     id: 4,
-            //     sub: 'Explore 04',
-            //     links: ''
-            // },
-            {
-                id: 5,
-                sub: 'Live Auctions',
-                links: '/live-auctions'
-            },
-            // {
-            //     id: 6,
-            //     sub: 'Item Details 01',
-            //     links: '/item-details-01'
-            // },
-            {
-                id: 7,
-                sub: 'Item Details',
-                links: '/item-details-02'
-            }
+        // namesub: [
+        //     {
+        //         id: 1,
+        //         sub: 'Explore 01',
+        //         links: '/explore-01'
+        //     },
+        //     {
+        //         id: 2,
+        //         sub: 'Explore 02',
+        //         links: '/explore-02'
+        //     },
+        //     {
+        //         id: 3,
+        //         sub: 'Explore 03',
+        //         links: '/explore-03'
+        //     },
+        //     {
+        //         id: 4,
+        //         sub: 'Explore 04',
+        //         links: ''
+        //     },
+        //     {
+        //         id: 5,
+        //         sub: 'Live Auctions',
+        //         links: '/live-auctions'
+        //     },
+        //     // {
+        //     //     id: 6,
+        //     //     sub: 'Item Details 01',
+        //     //     links: '/item-details-01'
+        //     // },
+        //     {
+        //         id: 7,
+        //         sub: 'Item Details',
+        //         links: '/item-details-02'
+        //     }
             
-        ],
+        // ],
     },{
         id: 3,
         name: 'Stats',
@@ -108,42 +108,53 @@ const menus = [
                 id: 2,
                 sub: 'Activity',
                 links: '/activity-02'
+            },
+            {
+                id: 5,
+                sub: 'Live Auctions',
+                links: '/live-auctions'
+            },
+
+            {
+                id: 7,
+                sub: 'Item Details',
+                links: '/item-details-02'
             }
 
         ],
     },
-    {
-        id: 4,
-        name: 'Community',
-        links: '#',
-        namesub: [
-            {
-                id: 1,
-                sub: 'Contact',
-                links: '/contact-01'
-            },
-            {
-                id: 1,
-                sub: 'Blog',
-                links: '/blog'
-            },
-            {
-                id: 2,
-                sub: 'Blog Details',
-                links: '/blog-details'
-            },
-            {
-                id: 10,
-                sub: 'FAQ',
-                links: '/faq'
-            },
-            {
-                id: 3,
-                sub: 'Help Center',
-                links: '/help-center'
-            }
-        ],
-    },
+    // {
+    //     id: 4,
+    //     name: 'Community',
+    //     links: '#',
+    //     namesub: [
+    //         {
+    //             id: 1,
+    //             sub: 'Contact',
+    //             links: '/contact-01'
+    //         },
+    //         {
+    //             id: 1,
+    //             sub: 'Blog',
+    //             links: '/blog'
+    //         },
+    //         {
+    //             id: 2,
+    //             sub: 'Blog Details',
+    //             links: '/blog-details'
+    //         },
+    //         {
+    //             id: 10,
+    //             sub: 'FAQ',
+    //             links: '/faq'
+    //         },
+    //         {
+    //             id: 3,
+    //             sub: 'Help Center',
+    //             links: '/help-center'
+    //         }
+    //     ],
+    // },
     {
         id: 5,
         name: 'Profile',
