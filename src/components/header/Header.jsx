@@ -106,7 +106,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                     <div className="sc-btn-top mg-r-12" id="site-header">
-                                        <ConnectButton/>
+                                    <ConnectButton  signingMessage="Welcome To LiveNFT"/>
 
                                         
 

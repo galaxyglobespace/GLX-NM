@@ -92,23 +92,18 @@ const CreateItem = () => {
                                     </div>
                                 </div>
                                 <div className="card-title">
-                                    <h5><Link to="/item-details-01">"Cyber Doberman #766”</Link></h5>
+                                    <h4><Link to="/item-details-01">{name}</Link></h4>
+
                                     <div className="tags">bsc</div>
                                 </div>
+                                    <h5><Link to="/item-details-01">{description}</Link></h5>
                                 <div className="meta-info">
                                     <div className="author">
                                         <div className="avatar">
-                                            <img src={avt} alt="Galaxy" />
                                         </div>
-                                        <div className="info">
-                                            <span>Owned By</span>
-                                            <h6> <Link to="/author-02">Freddie Carpenter</Link></h6>
-                                        </div>
+                                        
                                     </div>
-                                    <div className="price">
-                                        <span>Current Bid</span>
-                                        <h5> 4.89 ETH</h5>
-                                    </div>
+                                    
                                 </div>
                                 <div className="card-bottom">
                                     <Link to="/wallet-connect" className="sc-button style bag fl-button pri-3"><span>Place Bid</span></Link>
@@ -118,26 +113,14 @@ const CreateItem = () => {
                          </div>
                          <div className="col-xl-9 col-lg-6 col-md-12 col-12">
                              <div className="form-create-item">
-                                 <form action="#">
-                                    <h4 className="title-create-item">Upload file</h4>
-                                    <label className="uploadFile">
-                                        <span className="filename">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</span>
-                                        <input type="file" className="inputfile form-control" name="file" />
-                                    </label>
-                                 </form>
+                                 
                                 <div className="flat-tabs tab-create-item">
-                                    <h4 className="title-create-item">Select method</h4>
                                     <Tabs>
-                                        <TabList>
-                                            <Tab><span className="icon-fl-tag"></span>Fixed Price</Tab>
-                                            <Tab><span className="icon-fl-clock"></span>Time Auctions</Tab>
-                                            <Tab><span className="icon-fl-icon-22"></span>Open For Bids</Tab>
-                                        </TabList>
+                                        
 
                                         <TabPanel>
                                             <form onSubmit={mintFunction}>
-                                                {/* <h4 className="title-create-item">Price</h4>
-                                                <input type="text" placeholder="Enter price for one item (ETH)" /> */}
+                                                
 
                                                 <h4 className="title-create-item">Image</h4>
                                                 <input type="file" onChange={e=>setFile(e.target.files[0])} />
