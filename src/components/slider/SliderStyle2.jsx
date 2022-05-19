@@ -26,7 +26,7 @@ const SliderStyle2 = () => {
                         <div className="flat-bt-slider style2 flex">
                             <a href="/create-item" className="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Create
                             </span></a>
-                            <a href="/explore-01" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
+                            <a href="/explore-04" className="sc-button header-slider style style-1 note fl-button pri-1"><span>Explore
                             </span></a>
                         </div>
                     </div>

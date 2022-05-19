@@ -80,7 +80,7 @@ const BrowCategory = () => {
                                                             <h3>{item.title}</h3>
                                                         </div>
                                                         <div className="card-media">
-                                                            <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>
+                                                            <Link to="/item-details-02"><img src={item.img} alt="Galaxy" /></Link>
                                                         </div>                                      
                                                     </div>  	
                                                 </div>

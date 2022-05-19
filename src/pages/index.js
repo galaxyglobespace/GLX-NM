@@ -5,8 +5,8 @@
 // import Home05 from "./Home05";
 // import Home06 from "./Home06";
 // import Home07 from "./Home07";
-import Home08 from "./Home08";
-import Explore01 from "./Explore01";
+import Home05 from "./Home05";
+// import Explore01 from "./Explore01";
 // import Explore02 from "./Explore02";
 // import Explore03 from "./Explore03";
 import Explore04 from "./Explore04";
@@ -33,7 +33,7 @@ import Contact01 from "./Contact01";
 
 
 const routes = [
-  { path: '/', component: <Home08 />},
+  { path: '/', component: <Home05 />},
   // { path: '/home-02', component: <Home02 />},
   // { path: '/home-03', component: <Home03 />},
   // { path: '/home-04', component: <Home04 />},

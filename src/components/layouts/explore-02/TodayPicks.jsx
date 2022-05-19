@@ -565,7 +565,7 @@ const TodayPicks = () => {
                                                     data.dataContent.slice(0,visible).map (item=>(
                                                     <div key={item.id} className={`sc-card-product explode style2 mg-bt ${item.feature ? 'comingsoon' : '' } `}>                               
                                                         <div className="card-media">
-                                                            <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>
+                                                            <Link to="/item-details-02"><img src={item.img} alt="Galaxy" /></Link>
                                                             <div className="button-place-bid">
                                                                 <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                                             </div>
@@ -573,7 +573,7 @@ const TodayPicks = () => {
                                                             <div className="coming-soon">{item.feature}</div>
                                                         </div>
                                                         <div className="card-title">
-                                                            <h5><Link to="/item-details-01">"{item.title}"</Link></h5>
+                                                            <h5><Link to="/item-details-02">"{item.title}"</Link></h5>
                                                             
                                                         </div>
                                                         <div className="meta-info">
@@ -596,7 +596,7 @@ const TodayPicks = () => {
                                                                     <span>= {item.priceChange}</span>
                                                                 </div>
                                                             </div>
-                                                            <Link to="/activity-01" className="view-history reload">View History</Link>
+                                                            <Link to="/activity-02" className="view-history reload">View History</Link>
                                                         </div>
                                                     </div>
                                                     ))

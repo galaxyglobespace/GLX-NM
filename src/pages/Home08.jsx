@@ -3,9 +3,11 @@ import Header from '../components/header/HeaderStyle2';
 import ItemContent from '../components/layouts/home-8/ItemContent';
 import SideBar from '../components/layouts/home-8/SideBar';
 
+
 const Home08 = () => {
   return (
     <div className='home-8'>
+        
         <Header />
         <section className="tf-item tf-section">
                 <div className="themesflat-container">
@@ -20,6 +22,7 @@ const Home08 = () => {
                     </div>
                 </div>
             </section>
+
     </div>
   );
 }

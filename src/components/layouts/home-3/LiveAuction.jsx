@@ -58,7 +58,7 @@ const LiveAuction = props => {
                                                             <div className="slider-item">										
                                                                 <div className="sc-card-product">
                                                                     <div className="card-media">
-                                                                        <Link to="/item-details-01"><img src={item.img} alt="galaxy" /></Link>
+                                                                        <Link to="/item-details-02"><img src={item.img} alt="galaxy" /></Link>
                                                                         <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                                                         <div className="featured-countdown">
                                                                             <span className="slogan"></span>
@@ -71,7 +71,7 @@ const LiveAuction = props => {
                                                                         </div>
                                                                     </div>
                                                                     <div className="card-title">
-                                                                        <h5><Link to="/item-details-01">"{item.title}"</Link></h5>
+                                                                        <h5><Link to="/item-details-02">"{item.title}"</Link></h5>
                                                                         <div className="tags">{item.tags}</div>
                                                                     </div>
                                                                     <div className="meta-info">

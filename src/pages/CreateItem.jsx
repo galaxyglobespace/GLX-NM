@@ -82,7 +82,7 @@ const CreateItem = () => {
                              <h4 className="title-create-item">Preview item</h4>
                             <div className="sc-card-product">
                                 <div className="card-media">
-                                    <Link to="/item-details-01"><img src={img1} alt="Galaxy" /></Link>
+                                    <Link to="/item-details-02"><img src={img1} alt="Galaxy" /></Link>
                                     <Link to="/login" className="wishlist-button heart"><span className="number-like"> 100</span></Link>
                                     <div className="featured-countdown">
                                         <span className="slogan"></span>
@@ -92,11 +92,11 @@ const CreateItem = () => {
                                     </div>
                                 </div>
                                 <div className="card-title">
-                                    <h4><Link to="/item-details-01">{name}</Link></h4>
+                                    <h4><Link to="/item-details-02">{name}</Link></h4>
 
                                     <div className="tags">bsc</div>
                                 </div>
-                                    <h5><Link to="/item-details-01">{description}</Link></h5>
+                                    <h5><Link to="/item-details-02">{description}</Link></h5>
                                 <div className="meta-info">
                                     <div className="author">
                                         <div className="avatar">
@@ -107,7 +107,7 @@ const CreateItem = () => {
                                 </div>
                                 <div className="card-bottom">
                                     <Link to="/wallet-connect" className="sc-button style bag fl-button pri-3"><span>Place Bid</span></Link>
-                                    <Link to="/activity-01" className="view-history reload">View History</Link>
+                                    <Link to="/activity-02" className="view-history reload">View History</Link>
                                 </div>
                             </div>
                          </div>

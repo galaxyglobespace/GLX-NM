@@ -98,7 +98,7 @@ const SliderItem = props => (
                             <div className="overlay"></div>
                             <img src={props.item.img} alt="Galaxy" />
                             <div className="content">
-                                <div className="fs-16"><Link to="/item-details-01">{props.item.title}</Link></div>
+                                <div className="fs-16"><Link to="/item-details-02">{props.item.title}</Link></div>
                                 <p>{props.item.category}</p>
                             </div>   
                         </div>

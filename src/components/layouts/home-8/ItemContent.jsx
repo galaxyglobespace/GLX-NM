@@ -682,7 +682,7 @@ const ItemContent = () => {
                                                     <button className="wishlist-button heart"><span className="number-like"> {item.wishlist}</span></button>
                                                 </div>
                                                 <div className="card-media">
-                                                    <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>
+                                                    <Link to="/item-details-02"><img src={item.img} alt="Galaxy" /></Link>
                                                     <div className="featured-countdown">
                                                         <span className="slogan"></span>
                                                         <Countdown date={Date.now() + 500000000}>
@@ -724,12 +724,12 @@ const ItemContent = () => {
                                         <div className="sc-card-product menu_card style-h7">
                                             <div className="wrap-media">
                                                 <div className="card-media">
-                                                    <Link to="/item-details-01"><img src={item.img} alt="Galaxy" /></Link>                                                                                                            
+                                                    <Link to="/item-details-02"><img src={item.img} alt="Galaxy" /></Link>                                                                                                            
                                                 </div>
                                             </div>
                                             <div className="card-title">
                                                 <p>Item Name</p>
-                                                <h4><Link to="/item-details-01">{item.title}</Link></h4>
+                                                <h4><Link to="/item-details-02">{item.title}</Link></h4>
                                             </div>
                                             <div className="meta-info style">
                                                 <p>Creator</p>

@@ -601,14 +601,14 @@ const Authors02 = () => {
                                                         <div key={index} className="col-xl-3 col-lg-4 col-md-6 col-12">
                                                             <div className="sc-card-product explode ">
                                                                 <div className="card-media">
-                                                                    <Link to="/item-details-01"><img src={data.img} alt="Galaxy" /></Link>
+                                                                    <Link to="/item-details-02"><img src={data.img} alt="Galaxy" /></Link>
                                                                     <div className="button-place-bid ">
                                                                         <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
                                                                     </div>
                                                                     <Link to="/login" className="wishlist-button heart"><span className="number-like"> {data.wishlist}</span></Link>
                                                                 </div>
                                                                 <div className="card-title mg-bt-16">
-                                                                    <h5><Link to="/item-details-01">"{data.title}"</Link></h5>
+                                                                    <h5><Link to="/item-details-02">"{data.title}"</Link></h5>
                                                                 </div>
                                                                 <div className="meta-info">
                                                                     <div className="author">
@@ -630,7 +630,7 @@ const Authors02 = () => {
                                                                             <span>= {data.priceChange}</span>
                                                                         </div>
                                                                     </div>
-                                                                    <Link to="/activity-01" className="view-history reload">View History</Link>
+                                                                    <Link to="/activity-02" className="view-history reload">View History</Link>
                                                                 </div>
                                                             </div>
                                                         </div>

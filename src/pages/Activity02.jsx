@@ -217,7 +217,7 @@ const Activity02 = () => {
                                                     <img src={item.img} alt="" />
                                                 </div>
                                                 <div className="infor">
-                                                    <h4><Link to="/item-details-01">{item.title}</Link></h4>
+                                                    <h4><Link to="/item-details-02">{item.title}</Link></h4>
                                                     <div className="status">{item.status1} <span className="author">{item.author}</span></div>
                                                     <div className="time">{item.time}</div>
                                                 </div>
