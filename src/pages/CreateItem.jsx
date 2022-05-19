@@ -92,7 +92,7 @@ const CreateItem = () => {
                                     </div>
                                 </div>
                                 <div className="card-title">
-                                    <h5><Link to="/item-details-01">"Cyber Doberman #766”</Link></h5>
+                                    <h5><Link to="/item-details-01">{name}</Link></h5>
                                     <div className="tags">bsc</div>
                                 </div>
                                 <div className="meta-info">
@@ -118,26 +118,14 @@ const CreateItem = () => {
                          </div>
                          <div className="col-xl-9 col-lg-6 col-md-12 col-12">
                              <div className="form-create-item">
-                                 <form action="#">
-                                    <h4 className="title-create-item">Upload file</h4>
-                                    <label className="uploadFile">
-                                        <span className="filename">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</span>
-                                        <input type="file" className="inputfile form-control" name="file" />
-                                    </label>
-                                 </form>
+                                 
                                 <div className="flat-tabs tab-create-item">
-                                    <h4 className="title-create-item">Select method</h4>
                                     <Tabs>
-                                        <TabList>
-                                            <Tab><span className="icon-fl-tag"></span>Fixed Price</Tab>
-                                            <Tab><span className="icon-fl-clock"></span>Time Auctions</Tab>
-                                            <Tab><span className="icon-fl-icon-22"></span>Open For Bids</Tab>
-                                        </TabList>
+                                        
 
                                         <TabPanel>
                                             <form onSubmit={mintFunction}>
-                                                {/* <h4 className="title-create-item">Price</h4>
-                                                <input type="text" placeholder="Enter price for one item (ETH)" /> */}
+                                                
 
                                                 <h4 className="title-create-item">Image</h4>
                                                 <input type="file" onChange={e=>setFile(e.target.files[0])} />
