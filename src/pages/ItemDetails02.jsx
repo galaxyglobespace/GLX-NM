@@ -221,7 +221,7 @@ const ItemDetails02 = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <Link to="/wallet-connect" className="sc-button loadmore style bag fl-button pri-3"><span>Place a bid</span></Link>
+                                    {/* <Link to="/wallet-connect" className="sc-button loadmore style bag fl-button pri-3"><span>Place a bid</span></Link> */}
                                     <div className="flat-tabs themesflat-tabs">
                                     <Tabs>
                                         <TabList>

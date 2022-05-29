@@ -54,7 +54,7 @@ const CreateItem = props => (
                 <path d="M30.4587 26.2788H23.6854C23.177 26.2733 22.768 25.8811 22.7681 25.3992C22.7739 24.9229 23.1829 24.5398 23.6854 24.5398H30.4587C30.9654 24.5398 31.3761 24.9291 31.3761 25.4093C31.3761 25.8895 30.9654 26.2788 30.4587 26.2788Z" fill="#948BFB"/>
             </svg>                                                                             
         </div>
-        <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3>
+        {/* <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3> */}
         <p className="content">{props.item.description}</p>
     </div>
 )

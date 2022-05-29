@@ -55,7 +55,7 @@ const CreateItem = props => (
                     <img src={props.item.icon} alt="" />
                 </div>                                                                             
             </div>
-            <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3>
+            {/* <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3> */}
             <p className="content">{props.item.description}</p>
         </div>
     </div>

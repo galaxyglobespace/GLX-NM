@@ -34,7 +34,7 @@ return (
             <p> Total bid amount:</p>
             <p className="text-right price color-popup"> 4 ETH </p>
         </div>
-        <Link to="/wallet-connect" className="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close"> Place a bid</Link>
+        {/* <Link to="/wallet-connect" className="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close"> Place a bid</Link> */}
     </div>
     </Modal>
     

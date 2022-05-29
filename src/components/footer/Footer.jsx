@@ -8,10 +8,10 @@ const Footer = () => {
             title: "Authors",
             link: "/authors-02"
         },
-        {
-            title: "Collection",
-            link: "/wallet-connect"
-        },
+        // {
+        //     title: "Collection",
+        //     link: "/wallet-connect"
+        // },
         {
             title: "Author Profile",
             link: "/edit-profile"

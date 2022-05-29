@@ -69,7 +69,7 @@ const CreateItem = props => (
             </div>                                                                           
         </div>
         <div className="wrap-box">
-            <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3>
+            {/* <h3 className="heading"><Link to="/wallet-connect">{props.item.title}</Link></h3> */}
             <p className="content">{props.item.description}</p>
         </div>
     </div>

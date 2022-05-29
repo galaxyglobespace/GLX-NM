@@ -56,7 +56,7 @@ const LiveAuctionItem = props => (
                     </Countdown>
                 </div>
                 <div className="button-place-bid">
-                    <Link to="/wallet-connect" className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></Link>
+                    {/* <Link to="/wallet-connect" className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></Link> */}
                 </div>
             </div>
             <div className="card-title">
