@@ -1,6 +1,7 @@
-import React , { useState , Fragment } from 'react';
+import React, { useEffect, useState , Fragment } from 'react';
 import { Link } from 'react-router-dom'
 import CardModal from '../CardModal';
+import console from "console-browserify";
 
 const ExploreItem = props => {
     const data = props.data
@@ -11,6 +12,17 @@ const ExploreItem = props => {
     }
 
     const [modalShow, setModalShow] = useState(false);
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        // if (nftData.length === 0) {
+        //     collectionnft();
+        //     // setNftData(nftcollection)
+        console.log("props data is", props.data);
+
+        // }
+    }, [props.data]);
+
     return (
         <Fragment>
             <div className='explore'>

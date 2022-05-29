@@ -1,10 +1,12 @@
-import React , { useState , Fragment } from 'react';
+import React, { useEffect, useState , Fragment } from 'react';
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import Countdown from "react-countdown";
 import CardModal from '../CardModal';
-
+import Moralis from 'moralis';
+import { useMoralisWeb3Api } from "react-moralis";
+import console from "console-browserify";
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
@@ -78,6 +80,57 @@ const LiveAuction = () => {
     )
     
     const [modalShow, setModalShow] = useState(false);
+    const Web3Api = useMoralisWeb3Api();
+    let [nftData, setNftData] = useState([]);
+    let [searchData, setSearchData] = useState([]);
+    let tempNftData = [];
+    let length;
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        // if (nftData.length === 0) {
+            collectionnft();
+            // setNftData(nftcollection)
+            console.log("initial nft data in useEffect", nftData);
+
+        // }
+    }, []);
+
+    function resolveLink(url) {
+        if (!url || !url.includes("ipfs://")) return url;
+        return url.replace("ipfs://", "https://gateway.ipfs.io/ipfs/");
+    };
+
+    const collectionnft = async () => {
+        // const options = { address: "0x2f38736df77135f7d631ed366a1c40e0a8efe2c1", chain: "mumbai" };
+        // const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);
+        // console.log(NFTs)
+        console.log("nft data from server before call");
+        const options = { address: "0x3727B6e588c7A97Ae00E6bA710E2B15c85Ae4014", chain: "rinkeby" };
+        const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);
+        console.log("nft data from server after call", NFTs);
+        length = NFTs.total
+        // setCollecionName(data2)
+        for (let i = 0; i < length; i++) {
+            let response = await fetch(NFTs.result[i].token_uri);
+            let jsonData = await response.json();
+            let nftData = {
+                img: resolveLink(jsonData.image),
+                title: jsonData.name,
+                tags: "bsc",
+                imgAuthor: "saptarshi",
+                nameAuthor: "SalvadorDali",
+                price: "4.89 ETH",
+                priceChange: "$12.246",
+                wishlist: "100",
+                imgCollection: "NFT collection",
+                nameCollection: "Colorful Abstract"
+            }
+            tempNftData[i] = nftData
+            // console.log("nft data from server", data[i]);
+        }
+        setNftData(tempNftData);
+    }
 
     return (
         <Fragment>
@@ -88,7 +141,7 @@ const LiveAuction = () => {
                             <div className="heading-live-auctions">
                                 <h2 className="tf-title pb-20">
                                     Live Auctions</h2>
-                                <Link to="/explore-03" className="exp style2">EXPLORE MORE</Link>
+                                <Link to="/live-auctions" className="exp style2">EXPLORE MORE</Link>
                             </div>
                         </div>
                         <div className="col-md-12">
@@ -113,7 +166,7 @@ const LiveAuction = () => {
                                 scrollbar={{ draggable: true }}
                             >
                                     {
-                                        data.map((item,index) => (
+                                    nftData.map((item,index) => (
                                             <SwiperSlide key={index}>
                                                 <div className="swiper-container show-shadow carousel auctions">
                                                     <div className="swiper-wrapper">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { Link } from 'react-router-dom'
@@ -15,8 +15,67 @@ import img5 from '../assets/images/avatar/avt-7.jpg'
 import img6 from '../assets/images/avatar/avt-8.jpg'
 import img7 from '../assets/images/avatar/avt-2.jpg'
 import imgdetail1 from '../assets/images/box-item/images-item-details2.jpg'
+import Moralis from 'moralis';
+import { useMoralisWeb3Api } from "react-moralis";
+import console from "console-browserify";
+import { useParams, useLocation } from "react-router-dom";
 
-const ItemDetails02 = () => {
+const ItemDetails02 = (props) => {
+    const { id } = useParams();
+    const { query } = useLocation();
+    const Web3Api = useMoralisWeb3Api();
+    const [nftData, setNftData] = useState([]);
+
+    let data = [];
+    let length;
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        if (nftData.length === 0) {
+            collectionnft();
+            // setNftData(nftcollection)
+            // console.log("nft data in useEffect", nftData);
+
+        }
+    }, [nftData]);
+
+    function resolveLink(url) {
+        if (!url || !url.includes("ipfs://")) return url;
+        return url.replace("ipfs://", "https://gateway.ipfs.io/ipfs/");
+    };
+
+    const collectionnft = async () => {
+        // const options = { address: "0x2f38736df77135f7d631ed366a1c40e0a8efe2c1", chain: "mumbai" };
+        // const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);
+        // console.log(NFTs)
+        console.log("nft data from server before call");
+        const options = { address: "0x3727B6e588c7A97Ae00E6bA710E2B15c85Ae4014", chain: "rinkeby" };
+        const NFTs = await Moralis.Web3API.token.getAllTokenIds(options);
+        console.log("nft data from server after call", NFTs);
+        length = NFTs.total
+        // setCollecionName(data2)
+        for (let i = 0; i < length; i++) {
+            let response = await fetch(NFTs.result[i].token_uri);
+            let jsonData = await response.json();
+            let nftData = {
+                img: resolveLink(jsonData.image),
+                title: jsonData.name,
+                tags: "bsc",
+                imgAuthor: "saptarshi",
+                nameAuthor: "SalvadorDali",
+                price: "4.89 ETH",
+                priceChange: "$12.246",
+                wishlist: "100",
+                imgCollection: "NFT collection",
+                nameCollection: "Colorful Abstract"
+            }
+            data[i] = nftData
+            // console.log("nft data from server", data[i]);
+        }
+        setNftData(data);
+    }
+    console.log("-------item details--------->",id, query)
+
     const [dataHistory] = useState(
         [
             {
@@ -91,7 +150,8 @@ const ItemDetails02 = () => {
                         <div className="col-xl-6 col-md-12">
                             <div className="content-left">
                                 <div className="media">
-                                    <img src={imgdetail1} alt="Galaxy" />
+                                    {/* {console.log("image", )} */}
+                                    <img src={nftData[parseInt(id)].img} alt="Galaxy" />
                                 </div>
                             </div>
                         </div>
@@ -100,7 +160,7 @@ const ItemDetails02 = () => {
                                 <div className="sc-item-details">
                                     <div className="meta-item">
                                         <div className="left">
-                                            <h2>“The Pretty Fantasy Flower illustration ”</h2>
+                                            <h2>{nftData[parseInt(id)].title}</h2>
                                         </div>
                                         <div className="right">
                                             <span className="viewed eye mg-r-8">225</span>
@@ -115,7 +175,7 @@ const ItemDetails02 = () => {
                                                 </div>
                                                 <div className="info">
                                                     <span>Owned By</span>
-                                                    <h6> <Link to="/author-02">Ralph Garraway</Link> </h6>
+                                                    <h6> <Link to="/author">{nftData[parseInt(id)].nameCollection}</Link> </h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,7 +186,7 @@ const ItemDetails02 = () => {
                                                 </div>
                                                 <div className="info">
                                                     <span>Create By</span>
-                                                    <h6> <Link to="/author-02">Freddie Carpenter</Link> </h6>
+                                                    <h6> <Link to="/author">{nftData[parseInt(id)].nameAuthor}</Link> </h6>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +198,7 @@ const ItemDetails02 = () => {
                                     <div className="meta-item-details">
                                         <div className="item-style-2 item-details">
                                             <ul className="list-details">
-                                                <li><span>Artist : </span><h6>Ralph Garraway</h6> </li>
+                                                <li><span>Artist : </span><h6>{nftData[parseInt(id)].imgAuthor}</h6> </li>
                                                 <li><span>Size : </span><h6>3000 x 3000</h6> </li>
                                                 <li><span>Create : </span><h6>04 April , 2021</h6> </li>
                                                 <li><span>Collection : </span><h6>Cyberpunk City Art</h6> </li>
@@ -244,7 +304,7 @@ const ItemDetails02 = () => {
                     </div>
                 </div>
             </div>
-            <LiveAuction data={liveAuctionData} />
+            <LiveAuction data={nftData} />
             <Footer />
         </div>
     );

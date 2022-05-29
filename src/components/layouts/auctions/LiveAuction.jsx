@@ -47,7 +47,7 @@ const LiveAuctionItem = props => (
     <div className="fl-item col-xl-3 col-lg-6 col-md-6">
         <div className="sc-card-product">
             <div className="card-media">
-                <Link to="/item-details-02"><img src={props.item.img} alt="galaxy" /></Link>
+                <Link to={{ pathname: `/item-details/1`, query: { nft: 'image'}}}><img src={props.item.img} alt="galaxy" /></Link>
                 <Link to="/login" className="wishlist-button heart"><span className="number-like">{props.item.wishlist}</span></Link>
                 <div className="featured-countdown">
                     <span className="slogan"></span>

@@ -49,7 +49,7 @@ const menus = [
     {
         id: 2,
         name: 'Explore',
-        links: '/explore-04',
+        links: '/explore',
         // namesub: [
         //     {
         //         id: 1,
@@ -98,28 +98,29 @@ const menus = [
             //     sub: 'Activity 01',
             //     links: '/activity-01'
             // },
-            {
-                id: 6,
-                sub: 'Ranking',
-                links: '/ranking'
-            },
+            // {
+            //     id: 6,
+            //     sub: 'Ranking',
+            //     links: '/ranking'
+            // },
 
-            {
-                id: 2,
-                sub: 'Activity',
-                links: '/activity-02'
-            },
+            // {
+            //     id: 2,
+            //     sub: 'Activity',
+            //     links: '/activity'
+            // },
             {
                 id: 5,
                 sub: 'Live Auctions',
                 links: '/live-auctions'
-            },
-
-            {
-                id: 7,
-                sub: 'Item Details',
-                links: '/item-details-02'
             }
+            // ,
+
+            // {
+            //     id: 7,
+            //     sub: 'Item Details',
+            //     links: '/item-details'
+            // }
 
         ],
     },
@@ -168,7 +169,7 @@ const menus = [
             {
                 id: 2,
                 sub: 'Authors',
-                links: '/authors-02'
+                links: '/authors'
             },
 //             {
 //                 id: 3,

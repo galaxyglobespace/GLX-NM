@@ -11,6 +11,8 @@ import Moralis from 'moralis';
 import { useMoralis } from "react-moralis";
 import Web3 from 'web3';
 import ContractABI from './constant/contract';
+import console from "console-browserify";
+
 const web3 = new Web3(Web3.givenProvider)
 const ContractAddress = "0x6256626eb4B7609F68Fc4fAE157d6b8A71dCc327";
 

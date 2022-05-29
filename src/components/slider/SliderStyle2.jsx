@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
@@ -7,6 +7,14 @@ import 'swiper/scss/pagination';
 import img1 from '../../assets/images/box-item/item-h5.1.png'
 import img2 from '../../assets/images/box-item/item-h5.2.png'
 import img3 from '../../assets/images/box-item/item-h5.3.png'
+import music from '../../assets/images/category/music.jpeg'
+import art from '../../assets/images/category/art.jpg'
+import sports from '../../assets/images/category/sports.jpeg'
+import utility from '../../assets/images/category/utility.jpg'
+import virtualreality from '../../assets/images/category/virtualreality.jpg'
+
+import console from "console-browserify";
+
 
 const SliderStyle2 = () => {
     const subtitle = 'NFT MARKETPLACE'
@@ -44,11 +52,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2000}
                     >
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -64,11 +72,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2100}
                     >
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -84,11 +92,11 @@ const SliderStyle2 = () => {
                         }}
                         speed= {2200}
                     >
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
 
                     </Swiper>
                     <Swiper
@@ -105,11 +113,11 @@ const SliderStyle2 = () => {
                         speed= {2000}
                         className="end"
                     >
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img3} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img1} alt="Galaxy" /></SwiperSlide>
-                        <SwiperSlide><img src={img2} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={sports} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={art} alt="Galaxy" /></SwiperSlide>
+                        <SwiperSlide><img src={music} alt="Galaxy" /></SwiperSlide>
 
                     </Swiper>
                    

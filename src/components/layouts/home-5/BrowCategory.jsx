@@ -6,39 +6,34 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 
-import img1 from '../../../assets/images/box-item/imgslider2category.jpg'
-import img2 from '../../../assets/images/box-item/imgslider3category.jpg'
-import img3 from '../../../assets/images/box-item/imgslider4category.jpg'
-import img4 from '../../../assets/images/box-item/imgslider5category.jpg'
-import img5 from '../../../assets/images/box-item/imgslider6category.jpg'
-import img6 from '../../../assets/images/box-item/imgslider1category.jpg'
+import music from '../../../assets/images/category/music.jpeg'
+import art from '../../../assets/images/category/art.jpg'
+import sports from '../../../assets/images/category/sports.jpeg'
+import utility from '../../../assets/images/category/utility.jpg'
+import virtualreality from '../../../assets/images/category/virtualreality.jpg'
 
 const BrowCategory = () => {
     const [data] = useState(
         [
             {
                 title: 'Music',
-                img:  img1
-            },
-            {
-                title: 'Domain Names',
-                img:  img2
+                img: music
             },
             {
                 title: 'Virutal world',
-                img:  img3
+                img: virtualreality
             },
             {
                 title: 'Utility',
-                img:  img4
+                img: utility
             },
             {
                 title: 'Sports',
-                img:  img5
+                img: sports
             },
             {
                 title: 'Art',
-                img:  img6
+                img: art
             },
         ]
     )
@@ -67,8 +62,8 @@ const BrowCategory = () => {
                                         slidesPerView: 4,
                                     },
                                     }}
-                                loop={{ draggable: true }}
-                                scrollbar={{ draggable: true }}
+                                loop={{ draggable: false }}
+                                scrollbar={{ draggable: false }}
                                 >
                                 {
                                     data.map((item,index) => (
@@ -80,7 +75,7 @@ const BrowCategory = () => {
                                                             <h3>{item.title}</h3>
                                                         </div>
                                                         <div className="card-media">
-                                                            <Link to="/item-details-02"><img src={item.img} alt="Galaxy" /></Link>
+                                                            <Link to="/explore"><img src={item.img} alt="Galaxy" className='img-responsive' style={{height:"200px"}} /></Link>
                                                         </div>                                      
                                                     </div>  	
                                                 </div>
