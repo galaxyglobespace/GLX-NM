@@ -20,7 +20,7 @@ import BlogDetails from "./BlogDetails";
 import HelpCenter from "./HelpCenter";
 // import Authors01 from "./Authors01";
 import Authors02 from "./Authors02";
-import WalletConnect from "./WalletConnect";
+// import WalletConnect from "./WalletConnect";
 import CreateItem from "./CreateItem";
 import EditProfile from "./EditProfile";
 import Ranking from "./Ranking";
@@ -55,7 +55,7 @@ const routes = [
   { path: '/help-center', component: <HelpCenter />},
   // { path: '/authors-01', component: <Authors01 />},
   { path: '/authors', component: <Authors02 />},
-  { path: '/wallet-connect', component: <WalletConnect />},
+  // { path: '/wallet-connect', component: <WalletConnect />},
   { path: '/create-item', component: <CreateItem />},
   { path: '/edit-profile', component: <EditProfile />},
   { path: '/ranking', component: <Ranking />},

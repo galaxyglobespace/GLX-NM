@@ -108,7 +108,7 @@ const CreateItem = () => {
                                     
                                 </div>
                                 <div className="card-bottom">
-                                    <Link to="/wallet-connect" className="sc-button style bag fl-button pri-3"><span>Place Bid</span></Link>
+                                    {/* <Link to="/wallet-connect" className="sc-button style bag fl-button pri-3"><span>Place Bid</span></Link> */}
                                     <Link to="/activity-02" className="view-history reload">View History</Link>
                                 </div>
                             </div>
