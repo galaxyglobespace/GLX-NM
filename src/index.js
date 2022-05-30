@@ -5,13 +5,17 @@ import {BrowserRouter} from 'react-router-dom'
 import ScrollToTop from './ScrollToTop';
 import { MoralisProvider } from "react-moralis";
 import './polyfill'
+import { MoralisDappProvider } from "./components/layouts/MoralisDappProvider/MoralisDappProvider";
+
 
 
 ReactDOM.render(
   <BrowserRouter >
     <ScrollToTop />
     <MoralisProvider serverUrl="https://btbpgajnttxt.usemoralis.com:2053/server" appId="cg083RyJzWvVbLtyQ7WxQpfAyIICON4AN8MGSxqe">
+    <MoralisDappProvider>
     <App />
+    </MoralisDappProvider>
     </MoralisProvider>
   </BrowserRouter>,
   document.getElementById('root')
