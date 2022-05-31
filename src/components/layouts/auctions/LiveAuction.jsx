@@ -1,20 +1,35 @@
-import React , { useState } from 'react';
+import React , { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-
+import Web3DataService from "../../../server/w3server";
 import Countdown from "react-countdown";
+import console from "console-browserify";
 
 
 const LiveAuction = props => {
     const data = props.data;
+    console.log("--------aution data--",props.data)
 
     const [visible , setVisible] = useState(8);
+    const [mappedNftData, setMappedNftData] = useState([]);
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        // if (props.data === null) {
+            async function fetchData() {
+                let mappedData = await Web3DataService.web3NftCollnMapping(props.data, props.data.total)
+                console.log("mapped data", mappedData)
+                setMappedNftData([...mappedData])
+            }
+            fetchData();
+        // }
+    }, []);
+
     const showMoreItems = () => {
         setVisible((prevValue) => prevValue + 4);
     }
 
     return (
-        
         <section className="tf-section live-auctions">
             <div className="themesflat-container">
                 <div className="row">
@@ -23,12 +38,12 @@ const LiveAuction = props => {
                     </div>
                     
                     {
-                        data.slice(0,visible).map((item,index) => (
-                            <LiveAuctionItem key={index} item={item} />
+                        mappedNftData.slice(0,visible).map((item,index) => (
+                            <LiveAuctionItem key={index} item={item} index={index} />
                         ))
                     }
                     {
-                        visible < data.length && 
+                        visible < mappedNftData.length && 
                         <div className="col-md-12 wrap-inner load-more text-center"> 
                             <Link to="#" id="load-more" className="sc-button loadmore fl-button pri-3" onClick={showMoreItems}><span>Load More</span></Link>
                         </div>
@@ -43,12 +58,14 @@ LiveAuction.propTypes = {
     data: PropTypes.array.isRequired,
 }
 
-const LiveAuctionItem = props => (
+const LiveAuctionItem = ({key, index , item}) => (
+
+    
     <div className="fl-item col-xl-3 col-lg-6 col-md-6">
         <div className="sc-card-product">
             <div className="card-media">
-                <Link to={{ pathname: `/item-details/1`, query: { nft: 'image'}}}><img src={props.item.img} alt="galaxy" /></Link>
-                <Link to="/login" className="wishlist-button heart"><span className="number-like">{props.item.wishlist}</span></Link>
+                <Link to={{ pathname: `/item-details/${index}`, query: { nft: 'image'}}}><img src={item.img} alt="galaxy" /></Link>
+                <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                 <div className="featured-countdown">
                     <span className="slogan"></span>
                     <Countdown date={Date.now() + 500000000}>
@@ -60,23 +77,23 @@ const LiveAuctionItem = props => (
                 </div>
             </div>
             <div className="card-title">
-                <h5><Link to="/item-details-02">{props.item.title}</Link></h5>
-                <div className="tags">{props.item.tags}</div>
+                <h5><Link to={{ pathname: `/item-details/${index}`, query: { nft: 'image' } }}>{item.title}</Link></h5>
+                <div className="tags">{item.tags}</div>
             </div>
             <div className="meta-info">
                 <div className="author">
                     <div className="avatar">
-                        <img src={props.item.imgAuthor} alt="galaxy" />
+                        <img src={item.imgAuthor} alt="galaxy" />
                     </div>
                     <div className="info">
                         <span>Creator</span>
-                        <h6> <Link to="/authors-02">{props.item.nameAuthor}
+                        <h6> <Link to="/authors">{item.nameAuthor}
                         </Link> </h6>
                     </div>
                 </div>
                 <div className="price">
                     <span>Current Bid</span>
-                    <h5> {props.item.price}</h5>
+                    <h5> {item.price}</h5>
                 </div>
             </div>
         </div>

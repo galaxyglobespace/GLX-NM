@@ -1,10 +1,11 @@
-import React , { useState , Fragment } from 'react';
+import React , { useState , Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import Countdown from "react-countdown";
 import CardModal from './CardModal'
+import console from "console-browserify";
 
 import 'swiper/scss';
 import 'swiper/scss/navigation';
@@ -12,8 +13,11 @@ import 'swiper/scss/pagination';
 
 const LiveAuction = props => {
     const data = props.data;
-
     const [modalShow, setModalShow] = useState(false);
+
+    useEffect(() => {
+        console.log("runing if useeffect in liveAuction", props.data)
+    }, [props.data]);
 
     return (
         <Fragment>
@@ -59,7 +63,7 @@ const LiveAuction = props => {
                                                                 <div className="slider-item">										
                                                                     <div className="sc-card-product">
                                                                         <div className="card-media">
-                                                                            <Link to="/item-details-02"><img src={item.img} alt="galaxy" /></Link>
+                                                                            <Link to={{ pathname: `/item-details/${index}`, query: { nft: 'image'}}}><img src={item.img} alt="galaxy" /></Link>
                                                                             <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                                                             <div className="featured-countdown">
                                                                                 <span className="slogan"></span>
@@ -72,7 +76,7 @@ const LiveAuction = props => {
                                                                             </div>
                                                                         </div>
                                                                         <div className="card-title">
-                                                                            <h5><Link to="/item-details-02">"{item.title}"</Link></h5>
+                                                                            <h5><Link to={{ pathname: `/item-details/${index}`, query: { nft: 'image'}}}>"{item.title}"</Link></h5>
                                                                             <div className="tags">{item.tags}</div>
                                                                         </div>
                                                                         <div className="meta-info">
